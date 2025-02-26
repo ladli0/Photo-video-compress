@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compress photos and videos online. Optimize media files for faster sharing and storage with our easy-to-use compression tool.">
+    <meta name="keywords" content="photo compression, video compression, optimize media, compress images, compress videos, online compression tool">
+    <meta name="author" content="Your Name">
+    <title>Photo & Video Compression Tool</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+        }
+
+        /* Compression Tool Section */
+        #compression-tool {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .compression-section {
+            margin-bottom: 20px;
+        }
+
+        input, select, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        #download-photo, #download-video {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #download-photo:hover, #download-video:hover {
+            background-color: #218838;
+        }
+
+        /* Advertisement Section */
+        #advertisement {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Homepage Styles */
+        .cta-button, .download-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover, .download-button:hover {
+            background-color: #555;
+        }
+    </style>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1556290617292171" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Homepage -->
+    <header>
+        <h1>Welcome to Our Media Compression Tool</h1>
+        <p>Optimize your media files for faster sharing and storage.</p>
+    </header>
+
+    <main>
+        <section id="homepage-content">
+            <h2>Compress Your Photos and Videos Easily</h2>
+            <p>Click below to access our compression tool:</p>
+            <a href="#compression-tool" class="cta-button">Go to Compression Tool</a>
+        </section>
+
+        <section id="download-section">
+            <h2>Download Full HDR 1080p High-Quality Media</h2>
+            <p>Click below to download high-quality media files:</p>
+            <a href="path/to/your/media/file.mp4" download class="download-button">Download Video</a>
+            <a href="path/to/your/media/file.jpg" download class="download-button">Download Photo</a>
+        </section>
+
+        <!-- Compression Tool Section -->
+        <section id="compression-tool">
+            <h2>Compress Your Media Files</h2>
+
+            <!-- Photo Compression -->
+            <div class="compression-section">
+                <h3>Photo Compression</h3>
+                <input type="file" id="photo-input" accept="image/*">
+                <label for="photo-quality">Select Compression Level:</label>
+                <select id="photo-quality">
+                    <option value="0.1">Low Quality</option>
+                    <option value="0.5">Medium Quality</option>
+                    <option value="0.9">High Quality</option>
+                </select>
+                <button id="compress-photo">Compress Photo</button>
+                <a id="download-photo" style="display:none;">Download Compressed Photo</a>
+            </div>
+
+            <!-- Video Compression -->
+            <div class="compression-section">
+                <h3>Video Compression</h3>
+                <input type="file" id="video-input" accept="video/*">
+                <label for="video-quality">Select Compression Level:</label>
+                <select id="video-quality">
+                    <option value="0.1">Low Quality</option>
+                    <option value="0.5">Medium Quality</option>
+                    <option value="0.9">High Quality</option>
+                </select>
+                <button id="compress-video">Compress Video</button>
+                <a id="download-video" style="display:none;">Download Compressed Video</a>
+            </div>
+        </section>
+
+        <!-- Advertisement Section -->
+        <section id="advertisement">
+            <h2>Advertisement</h2>
+            <!-- Google AdSense Ad Unit -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-1556290617292171"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/compressorjs/1.1.1/compressor.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ffmpeg.js/4.2.900/ffmpeg.min.js"></script>
+    <script>
+        // Photo Compression
+        document.getElementById('compress-photo').addEventListener('click', function () {
+            const file = document.getElementById('photo-input').files[0];
+            const quality = parseFloat(document.getElementById('photo-quality').value);
+
+            if (file) {
+                new Compressor(file, {
+                    quality: quality,
+                    success(result) {
+                        const downloadLink = document.getElementById('download-photo');
+                        downloadLink.href = URL.createObjectURL(result);
+                        downloadLink.download = 'compressed-photo.jpg';
+                        downloadLink.style.display = 'block';
+                    },
+                    error(err) {
+                        console.error(err.message);
+                    },
+                });
+            } else {
+                alert('Please select a photo to compress.');
+            }
+        });
+
+        // Video Compression
+        document.getElementById('compress-video').addEventListener('click', function () {
+            const file = document.getElementById('video-input').files[0];
+            const quality = parseFloat(document.getElementById('video-quality').value);
+
+            if (file) {
+                const { createFFmpeg, fetchFile } = FFmpeg;
+                const ffmpeg = createFFmpeg({ log: true });
+
+                (async () => {
+                    await ffmpeg.load();
+                    ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(file));
+                    await ffmpeg.run('-i', 'input.mp4', '-vf', `scale=iw*${quality}:ih*${quality}`, 'output.mp4');
+                    const data = ffmpeg.FS('readFile', 'output.mp4');
+
+                    const downloadLink = document.getElementById('download-video');
+                    downloadLink.href = URL.createObjectURL(new Blob([data.buffer], { type: 'video/mp4' }));
+                    downloadLink.download = 'compressed-video.mp4';
+                    downloadLink.style.display = 'block';
+                })();
+            } else {
+                alert('Please select a video to compress.');
+            }
+        });
+    </script>
+</body>
+</html>
